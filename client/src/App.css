@@ -1,0 +1,48 @@
+
+
+/* navbar link styling */
+.li{
+    font-size: 13px;
+    color: #222 !important;
+    position: relative;
+}
+.li:hover ::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+}
+/* subscribe btn style */
+.subscribeBtn{
+  background-color: inherit;
+  border: 1px solid black !important;
+  color: black;
+}
+.subscribeBtn:hover{
+  background-color: black;
+  color: #fff;
+}
+
+/* swiper styling */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
