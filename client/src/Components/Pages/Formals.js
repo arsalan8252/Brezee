@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Container , Breadcrumb, Row, Col, Card} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import { FormalProducts } from '../DataFiles/FormalProducts';
+import CategoriesComp from './CategoriesComp';
 
 export default class Formals extends Component {
   render() {
@@ -24,9 +25,7 @@ export default class Formals extends Component {
           </Breadcrumb>
 
           {/* products filter */}
-          <Row className=' mt-4 justify-content-between'>
-            <Col lg={2} md={6} sm={12}></Col>
-          </Row>
+        <CategoriesComp />
 
           {/* all products */}
 
@@ -34,8 +33,9 @@ export default class Formals extends Component {
           {
             FormalProducts.map((product) => (
                 <Col lg='3' md='4' sm='6' xs='12' className='mt-4'>
-                  <Card className="border-0 rounded-0" key={product.id}  style={{cursor:'pointer'}}>
-                    <Card.Img src={product.images[0]} style={{objectFit : 'contain'}} />
+                  <Card className="border-0 rounded-0 myCard" key={product.id}  style={{cursor:'pointer'}}>
+                    <Card.Img src={product.images[0]} className='hoverImg1' style={{objectFit : 'contain'}} />
+                    <Card.Img src={product.images[1]} className='hoverImg2' style={{objectFit : 'contain'}} />
                     <Card.Body className='p-0'>
                       <Card.Title className='mt-3 text-capitalize fs-6'>{product.title}</Card.Title>
                       <Card.Title className='mt-2 text-capitalize fw-light fs-6'>{product.completeSuitPrice}</Card.Title>
