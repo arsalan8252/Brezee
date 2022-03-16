@@ -1,5 +1,3 @@
-
-
 /* navbar link styling */
 .li{
     font-size: 13px;
@@ -46,8 +44,6 @@
     height: 100%;
     object-fit: cover;
   }
-
-
   /* image hover */
   .hoverImg1{
     display: block;
@@ -103,4 +99,16 @@
 }
 .customBtn:hover{
   background-color: black;
+}
+/* newinSlider */
+.newinSlider{
+  position: relative;
+  cursor: pointer;
+}
+.newinSlider:hover ::before{
+  content: '';
+  position:absolute;
+  top: 0; left: 0;
+  width: 100%; height: 84.1%;
+  background-color: rgba(0, 0, 0, 0.3);
 }

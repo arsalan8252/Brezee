@@ -19,7 +19,7 @@ export default class Footer extends Component {
                   placeholder="Enter your email address"
                   className="form-control shadow-none rounded-0 me-3"
                 />
-                <Button className="subscribeBtn rounded-0 shadow-none border-0">
+                <Button className="subscribeBtn rounded-0 shadow-none border-0 " onClick={()=>alert('clicked')}>
                   Subscribe
                 </Button>
               </Col>

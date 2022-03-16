@@ -33,7 +33,7 @@ export default class NewInSlider extends Component {
               className="mySwiper"
             >
               {ImageSlider.map((data) => (
-                  <SwiperSlide key={data.id}>
+                  <SwiperSlide key={data.id} className='newinSlider' >
                   <img src={data.img} />
                   <h5 className="mt-4 fw-light fs-6">{data.title}</h5>
                 </SwiperSlide>
